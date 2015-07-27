@@ -1,0 +1,29 @@
+<?php
+
+class clsname1{
+    public $name = 'naren';
+    protected $name2 = 'jhuria';
+    private $name3 = 'jhdjhge';
+    }
+    
+    class clsname2 extends clsname1{
+        function displayname(){
+            return this -> name;
+        }
+        function displayname2(){
+            return this -> name2;
+        }
+        function displayname3(){
+            return this - > name3;
+        }
+    }
+    $clsname = new clsname2;
+    echo $clsname->displayname();
+    echo $clsname->displayname2();
+    echo $$clsname->displayname3();
+    
+    $uprclsname = new clsname1;
+    echo $uprclsname->name;
+    echo $uprclsname->name2;
+    echo $uprclsname->name3;
+?>
